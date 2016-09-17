@@ -1,17 +1,23 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url(Open_Sans/OpenSans-Light.ttf);
+    font-family: "Open Sans Light";
+    src: url(fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+	font-family: "Open Sans Regular";
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 body {
 	background-color: #F5F4F0;
-	font-family: "Open Sans";
-	font-weight: 400;
+	font-family: "Open Sans Light";
+	font-weight: 200;
 	height: 100%;
 	color: #454545;
 }
 
 h1 {
+	font-family: "Open Sans Regular";
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -34,9 +40,14 @@ h1 {
 }
 
 #icons img {
+	display: inline-block;
+	max-width: 60px;
+}
+
+#icon-container {
 	display: block;
 	margin: 0 auto 0 auto;
-	max-width: 60px;
+	width: 125px;
 }
 
 #footer {
