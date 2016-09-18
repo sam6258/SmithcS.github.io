@@ -82,7 +82,6 @@ h1 {
 #footer {
 	height: 1px;
 }
-
 #footer p {
 	font-family: "Open Sans Regular";
 	font-weight: 800;
@@ -90,11 +89,11 @@ h1 {
 	margin-right: 15px;
 	float: right;
 }
-
 #footer a {
 	float: right;
 	font-family: "Open Sans Light";
 	font-weight: 200;
+	color: #454545;
 }
 
 /* Some simple containers for organizing content */
