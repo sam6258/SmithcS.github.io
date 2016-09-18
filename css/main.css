@@ -62,6 +62,7 @@ h1 {
 	font-family: "Open Sans Regular";
 	font-weight: 800;
 	text-align: center;
+	margin-bottom: 0px;
 	max-width: 80%;
 	color: #EE6059;
 }
@@ -70,6 +71,10 @@ h1 {
 	font-family: "Open Sans Light";
 	font-weight: 200;
 	color: #454545;
+}
+
+#new-fact {
+	font-size: small;
 }
 
 #footer {

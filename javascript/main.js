@@ -3,6 +3,11 @@ $( document ).ready(function() {
 	getFact(number);
 });
 
+$( '#new-fact' ).on( 'click', function() {
+	number = Math.floor(Math.random()*10000);
+	getFact(number);
+});
+
 function checkFact(funFact) {
 	bannedNumbers = [911, 666, 313];
 	factNumber = parseInt(funFact.split(' ')[0]);
