@@ -6,7 +6,6 @@ $( document ).ready(function() {
 $( '#get-new-fact' ).on( 'click', function() {
 	number = Math.floor(Math.random()*10000);
 	getFact(number);
-
 	//resets the fade-in animation. 
 	elmnt = document.getElementById('random-fun-fact');
 	elmnt.classList.remove('fade-in');
