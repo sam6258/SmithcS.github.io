@@ -3,21 +3,25 @@ $( document ).ready(function() {
 	getFact(number);
 });
 
-$( '#new-fact' ).on( 'click', function() {
+$( '#get-new-fact' ).on( 'click', function() {
 	number = Math.floor(Math.random()*10000);
 	getFact(number);
+
+	//resets the fade-in animation. 
+	elmnt = document.getElementById('random-fun-fact');
+	elmnt.classList.remove('fade-in');
+	void elmnt.offsetWidth;
+	elmnt.classList.add('fade-in');
 });
 
 function checkFact(funFact) {
 	bannedNumbers = [911, 666, 313];
 	factNumber = parseInt(funFact.split(' ')[0]);
-
 	for(index = 0; index < bannedNumbers.length; index++) {
 		if(factNumber == bannedNumbers[index]) {
 			return false;
 		}
 	}
-
 	return true;
 }
 

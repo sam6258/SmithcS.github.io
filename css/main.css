@@ -2,12 +2,12 @@
     font-family: "Open Sans Light";
     src: url(OpenSans-Light.ttf);
 }
-
 @font-face {
 	font-family: "Open Sans Regular";
 	src: url(OpenSans-Regular.ttf);
 }
 
+/* General */
 body {
 	background-color: #F5F4F0;
 	font-family: "Open Sans Light";
@@ -15,7 +15,6 @@ body {
 	height: 100%;
 	color: #454545;
 }
-
 h1 {
 	font-family: "Open Sans Regular";
 	margin-left: auto;
@@ -24,6 +23,7 @@ h1 {
 	color: #EE6059;
 }
 
+/* About me section */
 #about-me p {
 	margin-top: 0;
 	margin-left: auto;
@@ -33,23 +33,23 @@ h1 {
 	height: auto;
 }
 
+/* Icons for github and linkedIn */
 #icons {
 	display: block;
 	margin-top: 10px;
 	width: 100%;
 }
-
 #icons img {
 	display: inline-block;
 	max-width: 60px;
 }
-
 #icon-container {
 	display: block;
 	margin: 0 auto 0 auto;
 	width: 125px;
 }
 
+/* Randomly generated fact section */
 #fun-fact {
 	margin-top: 20px;
 	margin-left: auto;
@@ -57,7 +57,6 @@ h1 {
 	display: block;
 	height: auto;
 }
-
 #fun-fact p {
 	font-family: "Open Sans Regular";
 	font-weight: 800;
@@ -66,26 +65,25 @@ h1 {
 	max-width: 80%;
 	color: #EE6059;
 }
-
 #fun-fact span {
 	font-family: "Open Sans Light";
 	font-weight: 200;
 	color: #454545;
 }
-
-#new-fact {
+#get-new-fact {
 	font-size: small;
 }
 
+/* Footer area */
 #footer {
 	height: 1px;
 }
-
 #footer p {
 	margin-right: 15px;
 	float: right;
 }
 
+/* Some simple containers for organizing content */
 .content {
 	position: absolute;
     top: 0;
@@ -94,14 +92,38 @@ h1 {
     height: 100%;
     display: table;
 }
-
 .section {
 	display: table-row;
 	width: 100%;
 }
-
 .section-content {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
+}
+
+/* ANIMATIONS - all credit to Alex Gurevich at fabriceleven.com */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: .7s;
+-moz-animation-delay: .7s;
+animation-delay: .7s;
 }
