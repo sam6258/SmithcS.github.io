@@ -348,8 +348,6 @@ a:hover {
 	height:4px;
 }
 
-
-
 /*++++++++++++ CUSTOM HEADER ELEMENTS +++++++++++++*/
 
 /*========= HEADER ==========*/
@@ -407,13 +405,11 @@ a:hover {
 	vertical-align: middle;
 	max-width: 200px;
 }
-
 #qoute {
 	display: inline-block;
 	vertical-align: middle;
 }
 #qoute p {
-	text-align: left;
 	display: block;
 }
 #press h1 {
@@ -424,6 +420,12 @@ a:hover {
 	font-family: 'Open-Sans-Light';
 	font-size: 75%;
 	color: white:;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
 }
 
 /*========= SPONSORS ==========*/
@@ -497,7 +499,15 @@ a:hover {
 }
 
 
-
-
-
+/*====================  MISCELLANEOUS ====================*/
+.spacer {
+	height:70px;
+}
+.small-spacer {
+	height:25px;
+}
+.container {
+	padding-top:40px;
+	padding-bottom: 40px;
+}
 
