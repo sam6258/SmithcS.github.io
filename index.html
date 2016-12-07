@@ -1,51 +1,174 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Smith Sopp's website">
-    	<meta name="keywords" content="Smith Sopp, Smith, Sopp">
-		<title>Smith Sopp | Home</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-	</head>
-	<body>
-		<div class="content">
+<head>
+	<title>HackPSU | Spring 2016 //Build Something</title>
+	<meta name="google-site-verification" content="Bl3Vj9Zzc3XisnRWC1pK7BDkhVJJ80dScl3BeJRn11k" />
 
-			<div class="section">
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lekton:400' rel='stylesheet' type='text/css'>
 
-				<div id="about-me" class="section-content">
-					<h1>Hi, I'm Smith!</h1>
-					<p> I'm a 3rd year university student currently enrolled at Penn State and pursuing a B.S. in Computer Engineering. I enjoy making things, solving problems, and 
-					meeting new people. Feel free to check out some of the stuff I do. </p>
 
-					<div id="icons" class="section-content">
-						<div id="icon-container">
-							<a href="https://github.com/SmithcS"><img src="icons/github-logo.svg"></a>
-							<a href="https://www.linkedin.com/in/smith-sopp-a80377111"><img src="icons/linkedin-logo.svg"></a>
-						</div>
-					</div>
+	<!-- adding css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="shortcut icon" href="assets/icons/favicon.ico">
 
-					<!-- overdoing the tag id's, but needed to for animation resets -->
-					<div id="fun-fact" class="section-content fade-in one">
-						<p id="random-fun-fact">Random Fun Fact: <span id="fact"></span></p>
-						<p id="get-new-fact">(Want another? Click here!)</p>
-					</div>
+	<!-- other scripts -->
+	<!-- <script src="node/jquery/dist/jquery.min.js"></script> -->
+	<script src="js/main.js"></script>
+	<script src="js/quickfit.js"></script>
+	<script src="assets/json-objects.js"></script>
 
-				</div>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="node/bootstrap/dist/css/bootstrap.min.css">
+	<script src="node/bootstrap/dist/js/bootstrap.min.js"></script>
 
-			</div>
+	<!-- styles -->
 
-			<div class="section">
+	<link rel='stylesheet' href='node/fullcalendar/dist/fullcalendar.css' />
+	<link rel="stylesheet" type="text/css" href="css/hexagons.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-				<div id="footer" class="section-content">
-					<p>Contact:&nbsp<a id="email" href="mailto:smith.sopp@gmail.com" target="_top">smith.sopp@gmail.com</a></p>
-				</div>
 
-			</div>
+	<!-- ~~so metadata -->
+	<meta property="og:title" content="HackPSU: Penn State's Official Hackathon" />
+	<meta property="og:site_name" content="HackPSU.org"/>
+	<meta property="og:description" content="Join us November 12th for HackPSU, Penn State's Official Hackathon! 400 students will have 24 hours to build the coolest technology they can to compete for prizes and eternal glory." />
+	<meta property="og:image" content="assets/images/hackpsulogo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
+<!-- MLH Trust Badge -->
+<body>
+
+	<div id="divider-top">
+	</div>
+	<section id='header'>
+		<div id="logo-container">
+			<img src="assets/images/hackpsulogo-negativeV3.svg" id="hackpsu-logo "class="animated rubberBand" alt="hackpsulogo" >
 		</div>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="javascript/main.js"></script>
-</html> 
+		<div id="banner">
+			<div class="container">
 
-<!-- Add a "did you know? section with fun random facts -->
+				<!--  BUTTONS FOR MORE INFORMATION 
+				<div>
+					<div class="col-md-6 col-sm-12" >
+						<a href="https://hackpsu2016.slack.com/signup">
+						<div class="button">Join our team</div></a>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<a href="assets/sponsorpacketF2016.pdf">
+							<div class="button">Sponsor</div></a>
+					</div>
+				</div>
+ 				-->
+
+			</div>
+		</div>
+	</section>
+
+	<section id='press'>
+		<div class='container'>
+			<div id='header-line'> 
+				<div class='divider'></div>
+				<h1>  P  &nbsp R &nbsp E &nbsp S &nbsp S  </h1>
+				<div class='divider'></div>
+			</div>
+			<div id='press-line'>
+				<img id='press-hex' src="assets/images/transp-hex.svg">
+				<div id='qoute'>
+					<p>"Welcome to HackPSU, a place where complete strangers can build the next great idea. Rome may have not been built in a day, but then again, Caesar didn’t have the Amazon Echo."</p>
+					<p>- Roger Van Scyoc, Center Daily Times</p>
+				</div>
+			</div>
+			<div id='press-line'>
+				<div id='qoute'>
+					<p>"Hackathons have swept the country in recent years as a way for students of all ages to be exposed to coding, technology, and to even be recruited by companies for internships and full-time jobs."</p>
+					<p>- Patrick Cines, Onward State</p>
+				</div>
+				<img id='press-hex' src="assets/images/transp-hex-v4.svg">
+			</div>
+			<div id='press-line'>
+				<img id='press-hex' src="assets/images/transp-hex-v5.svg">
+				<div id='qoute'>
+					<p>"Welcome to HackPSU, a place where complete strangers can build the next great idea. Rome may have not been built in a day, but then again, Caesar didn’t have the Amazon Echo."</p>
+					<p>- Roger Van Scyoc, Center Daily Times</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id='sponsors'>
+		<div class='container'>
+
+			<div id='header-line'> 
+				<div class='divider'></div>
+				<h1> P &nbsp A &nbsp S &nbsp T &nbsp&nbsp&nbsp&nbsp&nbsp S &nbsp P &nbsp O &nbsp N &nbsp S &nbsp O &nbsp R &nbsp S </h1>
+				<div class='divider'></div>
+			</div>
+
+			<div class='sponsor-xl' id='logo-container'>
+				<img src="assets/sponsors-bw/microsoft-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/capitalone-logo-bw.svg"></img>
+			</div>
+
+			<div class='sponsor-lg' id='logo-container'>
+				<img src="assets/sponsors-bw/vantiv-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/ibm-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/zonoff-logo-bw.svg"></img>
+			</div>
+
+			<div class='sponsor-med' id='logo-container'>
+				<img src="assets/sponsors-bw/uhg-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/erieinsurance-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/weebly-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/optum-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/blockchain-logo-bw.svg"></img>
+			</div>
+
+			<div class='sponsor-med' id='logo-container'>
+				<img src="assets/sponsors-bw/edtech-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/coil-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/danaher-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/accuweather-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/ni-logo-bw.svg"></img>
+			</div>
+
+			<div class='sponsor-med' id='logo-container'>
+				<img src="assets/sponsors-bw/brazen-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/instructure-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/orderup-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/launchbox-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/inventpsu-logo-bw.svg"></img>
+			</div>
+
+			<div class='sponsor-sm' id='logo-container'>
+				<img src="assets/sponsors-bw/namecheap-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/gew-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/pariveda-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/jetbrains-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/github-logo-bw.svg"></img>
+			</div>
+
+			<div class='sponsor-sm' id='logo-container'>
+				<img src="assets/sponsors-bw/wolframlang-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/westarete-logo-bw.svg"></img>
+				<img src="assets/sponsors-bw/dreamit-logo-bw.svg"></img>
+			</div>
+
+	</section>
+
+	<section id='past-projects'>
+        <div class='container'>
+        	<div id='header-line'> 
+				<div class='divider'></div>
+				<h1> P &nbsp A &nbsp S &nbsp T &nbsp&nbsp&nbsp&nbsp&nbsp P &nbsp R &nbsp O &nbsp J &nbsp E &nbsp C &nbsp T &nbsp S</h1>
+				<div class='divider'></div>
+			</div>
+        	
+        </div>
+	</section>
+
+</body>
+</html>
