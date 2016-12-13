@@ -64,6 +64,7 @@ table {
 	.section-header-center {
 		font-size: 60%;
 	}
+
 	#logo-container img {
 		width: 60%;
 	}
@@ -199,6 +200,7 @@ table {
 	.section-header-center {
 		font-size: 120%;
 	}
+
 	#logo-container img {
 		width: 350px;
 	}
@@ -221,6 +223,17 @@ table {
     src: url(OpenSans/OpenSans-Light.ttf);
 }
 
+.parallax {
+	background-image: url('../assets/backgrounds/set-01-pattern-15.png');
+
+	height: 100%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 h1, h2, h3, h4, h5, h6{
 
 	text-align: center;
@@ -238,7 +251,7 @@ body {
 	font-family: 'Open-Sans-Light';
 	color: white:;
 	font-size: xx-large;
-	background-color: #3A2D40;
+	/*background-color: #3A2D40;*/
 	-webkit-background-size: cover;
 	background-size: contain;
 	-moz-background-size: cover;
@@ -353,7 +366,8 @@ a:hover {
 /*========= HEADER ==========*/
 
 #header {
-	background: rgba(58, 45, 64, 0.5);
+	/*background: rgba(58, 45, 64, 0.5);*/
+	background-color: #3A2D40;
 	padding:0;
 }
 #logo-container {
@@ -388,7 +402,8 @@ a:hover {
 
 /*========= PRESS ==========*/
 #press {
-	color: white
+	/*color: white;*/
+	background-color: none;
 }
 #press-line {
 	display: inline-block;
@@ -396,7 +411,7 @@ a:hover {
 }
 #press-line p {
 	display: inline-block;
-	vertical-align: middle; 
+	vertical-align: middle;
 	font-size: 18px;
 	max-width: 1000px;
 }
@@ -419,7 +434,7 @@ a:hover {
 	margin-right: 25px;
 	font-family: 'Open-Sans-Light';
 	font-size: 75%;
-	color: white:;
+	color: white;
 }
 .align-left {
 	text-align: left;
@@ -430,7 +445,7 @@ a:hover {
 
 /*========= SPONSORS ==========*/
 #sponsors {
-	color: white;
+	/*color: white;*/
 	font-family: 'Open-Sans-Light';
 }
 #sponsors h1 {
@@ -448,14 +463,14 @@ a:hover {
 	max-width: 225px;
 	height: 125px;
 	margin-right: 25px;
-    margin-left: 25px;	
+    margin-left: 25px;
 }
 .sponsor-lg img {
 	max-width: 200px;
 	height: 125px;
 	margin-right: 25px;
     margin-left: 25px;
-} 
+}
 .sponsor-med img {
 	max-width: 175px;
 	height: 75px;
@@ -510,4 +525,3 @@ a:hover {
 	padding-top:40px;
 	padding-bottom: 40px;
 }
-
