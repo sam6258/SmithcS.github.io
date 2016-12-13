@@ -1,5 +1,38 @@
-// 	$( document ).ready(function() {
-//     console.log( "ready!" );
+	$( document ).ready(function() {
+    console.log( "ready!" );
+
+    var $window = $(window);
+    // var $animation-element = $('')
+
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($("section"), function() {
+        var element = $(this);
+        var element_height = element.outerHeight();
+        var element_top_position = element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+              console.log("triggered!!!!! @ " + element);
+              element.find('.divider:first-child').addClass('fade-in-left');
+              element.find('h1').addClass('fade-in');
+              element.find('.divider:last-child').addClass('fade-in-right');
+        } else {
+          element.find('.divider:first').removeClass('fade-in-left');
+          element.find('h1').removeClass('fade-in');
+          element.find('.divider:last').removeClass('fade-in-right');
+        }
+      });
+    }
+
+    $window.on('scroll', check_if_in_view);
+    $window.trigger('scroll');
+
 //     // $( "#header" ).css( "height", window.innerHeight);
 //
 //     var imdobile = true;
@@ -455,4 +488,4 @@
 // 	// 	$('#' + rubricArea.type + '-rubric').append(rubricHTML)
 // 	// };
 //
-// })
+})

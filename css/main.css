@@ -224,10 +224,8 @@ table {
 }
 
 .parallax {
-	background-image: url('../assets/backgrounds/set-01-pattern-15.png');
-
-	height: 100%;
-
+	background-image: url('../assets/backgrounds/Background.png');
+	min-height: 100%;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -368,16 +366,18 @@ a:hover {
 #header {
 	/*background: rgba(58, 45, 64, 0.5);*/
 	background-color: #3A2D40;
+	border-bottom: white 5px;
+	/*max-height: 200px;*/
 	padding:0;
 }
 #logo-container {
-	width:100%;
+	/*width:100%;*/
 	position: relative;
 	z-index: 500;
 }
 #hackpsu-logo {
 	text-align: center;
-	height:auto;
+	max-height:inherit;
 	z-index: 500;
 }
 #banner {
@@ -413,6 +413,7 @@ a:hover {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 18px;
+	color: white;
 	max-width: 1000px;
 }
 #press-hex {
@@ -445,7 +446,8 @@ a:hover {
 
 /*========= SPONSORS ==========*/
 #sponsors {
-	/*color: white;*/
+	color: white;
+	background-color: #3A2D40;
 	font-family: 'Open-Sans-Light';
 }
 #sponsors h1 {
@@ -479,7 +481,7 @@ a:hover {
     margin-left: 35px;
 }
 .sponsor-sm img {
-	max-width: 75px;
+	max-width: 100px;
 	margin-top: 15px;
 	height: 50px;
 	margin-right: 45px;
@@ -524,4 +526,41 @@ a:hover {
 .container {
 	padding-top:40px;
 	padding-bottom: 40px;
+}
+
+/*====================  ANIMATIONS ====================*/
+
+.fade-in-left {
+	animation-duration: 2s;
+	animation-name: fade-in-left;
+}
+@keyframes fade-in-left {
+		from {
+			transform: translate3d(-3em,0,0);
+			opacity: 0;
+			animation-timing-function: ease-in;
+		}
+}
+.fade-in-right {
+	animation-duration: 2s;
+	animation-name: fade-in-right;
+}
+@keyframes fade-in-right {
+		from {
+			transform: translate3d(3em,0,0);
+			opacity: 0;
+			animation-timing-function: ease-in;
+		}
+}
+
+.fade-in {
+	animation-duration: 2s;
+	animation-name: fade-in;
+}
+@keyframes fade-in {
+		from {
+			transform: scale(0);
+			opacity: 0;
+			animation-timing-function: ease-in;
+		}
 }
