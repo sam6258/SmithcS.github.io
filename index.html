@@ -15,10 +15,11 @@
 
 	<!-- other scripts -->
 	<!-- <script src="node/jquery/dist/jquery.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/quickfit.js"></script>
 	<script src="assets/json-objects.js"></script>
+	<script src="node_modules/skrollr/dist/skrollr.min.js"></script>
 
 	<!-- bootstrap -->
 	<!-- <link rel="stylesheet" href="node/bootstrap/dist/css/bootstrap.min.css"> -->
@@ -44,7 +45,6 @@
 <!-- MLH Trust Badge -->
 <body>
 
-<div class="parallax">
 	<div id="divider-top">
 	</div>
 	<section id='header'>
@@ -71,8 +71,7 @@
 		<!-- </div> -->
 	</section>
 
-	<section id='press'>
-		<div class='container'>
+	<section id='press' style="background-color:#000">
 			<div id='header-line'>
 				<div class='divider fade-in-left'></div>
 				<h1 class="fade-in">  P  &nbsp R &nbsp E &nbsp S &nbsp S  </h1>
@@ -81,7 +80,7 @@
 			<div id='press-line'>
 				<img id='press-hex' src="assets/images/transp-hex.svg">
 				<div id='qoute'>
-					<p class="align-left">"Welcome to HackPSU, a place where complete strangers can build the next great idea. Rome may have not been built in a day, but then again, Caesar didn’t have the Amazon Echo."</p>
+					<p class="align-left">"Welcome to HackPSU, a place where complete strangers can build the next great idea. Rome may have not been built in a day, but then again, Caesar didn't have the Amazon Echo."</p>
 					<p class="align-left">- Roger Van Scyoc, Center Daily Times</p>
 				</div>
 			</div>
@@ -95,12 +94,14 @@
 			<div id='press-line'>
 				<img id='press-hex' src="assets/images/transp-hex-v5.svg">
 				<div id='qoute'>
-					<p class="align-left">"Welcome to HackPSU, a place where complete strangers can build the next great idea. Rome may have not been built in a day, but then again, Caesar didn’t have the Amazon Echo."</p>
+					<p class="align-left">"Welcome to HackPSU, a place where complete strangers can build the next great idea. Rome may have not been built in a day, but then again, Caesar didn't have the Amazon Echo."</p>
 					<p class="align-left">- Roger Van Scyoc, Center Daily Times</p>
 				</div>
 			</div>
 		</div>
-
+</div>
+</div>
+</div>
 	</section>
 
 	<section id='sponsors'>
@@ -173,6 +174,5 @@
 
         </div>
 	</section>
-</div>
 </body>
 </html>

@@ -223,14 +223,14 @@ table {
     src: url(OpenSans/OpenSans-Light.ttf);
 }
 
-.parallax {
+/*.parallax {
 	background-image: url('../assets/backgrounds/Background.png');
 	min-height: 100%;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+}*/
 
 h1, h2, h3, h4, h5, h6{
 
@@ -564,3 +564,33 @@ a:hover {
 			animation-timing-function: ease-in;
 		}
 }
+
+/*.hsContainer {
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+
+.hsContent {
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Slide 1 */
+#press .bcg {background-image:url('assets/backgrounds/Background.png')}*/
