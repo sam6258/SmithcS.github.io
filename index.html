@@ -49,7 +49,7 @@
 	</div>
 	<section id='header'>
 		<div id="logo-container">
-			<img src="assets/images/hackpsulogo-negativeV3.svg" id="hackpsu-logo" class="animated rubberBand" alt="hackpsulogo" >
+			<img src="assets/images/hackpsulogo-negativeV3.svg" id="hackpsu-logo" class="animated rubberBand" alt="hackpsulogo" data-0="opacity:1" data-top-bottom="opacity:0">
 		</div>
 		<!-- <div id="banner"> -->
 			<!-- <div class="container"> -->
@@ -71,11 +71,19 @@
 		<!-- </div> -->
 	</section>
 
-	<section id='press' style="background-color:#000">
+	<section id='press'>
+		<div class="hex-back-1"
+		data-center="background-position: 50% 0px;"
+		data-top-bottom="background-position: 50% -100px;"
+		data-anchor-target="#press">
+		<div id="press-container">
+			<div data-center="opacity: 1"
+          	data-top-bottom="opacity: 0"
+                data-anchor-target="#sponsors">
 			<div id='header-line'>
-				<div class='divider fade-in-left'></div>
-				<h1 class="fade-in">  P  &nbsp R &nbsp E &nbsp S &nbsp S  </h1>
-				<div class='divider fade-in-right'></div>
+				<div class='divider' data-0="transform: translate(-100px, 0px)" data-top="transform: translate(0px,0px)"></div>
+				<h1 data-0="transform: scale(0.5, 0.5)" data-50-top="transform: scale(1,1)">  P  &nbsp R &nbsp E &nbsp S &nbsp S  </h1>
+				<div class='divider' data-0="transform: translate(100px, 0px)" data-top="transform: translate(0px,0px)"></div>
 			</div>
 			<div id='press-line'>
 				<img id='press-hex' src="assets/images/transp-hex.svg">
@@ -99,20 +107,23 @@
 				</div>
 			</div>
 		</div>
-</div>
-</div>
-</div>
+	</div>
+		</div>
 	</section>
 
 	<section id='sponsors'>
 		<div class='container'>
 
 			<div id='header-line'>
-				<div class='divider'></div>
+				<div class='divider' data-0="transform: translate(-100px, 0px)" data-top="transform: translate(0px,0px)"></div>
+				<h1 data-0="transform: scale(0.1, 0.1)" data-50-top="transform: scale(1,1)"> P &nbsp A &nbsp S &nbsp T &nbsp&nbsp&nbsp&nbsp&nbsp S &nbsp P &nbsp O &nbsp N &nbsp S &nbsp O &nbsp R &nbsp S </h1>
+				<div class='divider' data-0="transform: translate(100px, 0px)" data-top="transform: translate(0px,0px)"></div>
+				<!-- <div class='divider'></div>
 				<h1> P &nbsp A &nbsp S &nbsp T &nbsp&nbsp&nbsp&nbsp&nbsp S &nbsp P &nbsp O &nbsp N &nbsp S &nbsp O &nbsp R &nbsp S </h1>
-				<div class='divider'></div>
+				<div class='divider'></div> -->
 			</div>
 
+			<div id="container">
 			<div class='sponsor-xl' id='logo-container'>
 				<img src="assets/sponsorsBW/microsoft-logo-BW.svg"></img>
 				<img src="assets/sponsorsBW/capitalone-logo-BW.svg"></img>
@@ -161,7 +172,7 @@
 				<img src="assets/sponsorsBW/westarete-logo-BW.svg"></img>
 				<img src="assets/sponsorsBW/dreamit-logo-BW.svg"></img>
 			</div>
-
+</div>
 	</section>
 
 	<section id='past-projects'>
@@ -171,7 +182,6 @@
 				<h1> P &nbsp A &nbsp S &nbsp T &nbsp&nbsp&nbsp&nbsp&nbsp P &nbsp R &nbsp O &nbsp J &nbsp E &nbsp C &nbsp T &nbsp S</h1>
 				<div class='divider'></div>
 			</div>
-
         </div>
 	</section>
 </body>
