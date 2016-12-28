@@ -1,4 +1,4 @@
-/*=============== *** CSS RESET *** =================*/
+d/*=============== *** CSS RESET *** =================*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -53,167 +53,6 @@ table {
 }
 
 /*========================= *** MEDIA QUERIES *** =========================*/
-
-@media (max-width: 380px) {
-	#banner-text h1 {
-		font-size: 60%;
-	}
-	.section-header {
-		font-size: 60%;
-	}
-	.section-header-center {
-		font-size: 60%;
-	}
-	#logo-container img {
-		width: 60%;
-	}
-	#mlh-trust-badge img {
-		max-height: 85px;
-	}
-	.learnbuildshare-icon img {
-		width: 35% !important;
-	}
-	.tagline {
-		padding: 5px;
-	}
-	a .button {
-		font-size: 40%;
-	}
-	p {
-		font-size: 45%
-	}
-}
-
-@media (min-width: 380px) and (max-width: 450px) {
-	#banner-text h1 {
-		font-size: 80%;
-	}
-	.section-header {
-		font-size: 80%;
-	}
-	.section-header-center {
-		font-size: 80%;
-	}
-	#logo-container img {
-		width: 60%;
-	}
-	#mlh-trust-badge img {
-		max-height: 90px;
-	}
-	.learnbuildshare-icon img {
-		width: 35% !important;
-	}
-	.tagline {
-		padding: 10px;
-	}
-	a .button {
-		font-size: 40%;
-	}
-	p {
-		font-size: 55%
-	}
-}
-
-@media (max-width: 650px) {
-	#floating>div {
-		max-width: 80%
-	}
-	#countdown-timer .unit{
-		display:inline-block;
-		text-align: center;
-		color:white;
-		font-size: 40%;
-		width: 22.5%;
-	}
-	#countdown-timer {
-		text-align: left;
-		padding-left: 10px;
-		background:#2A202F;
-		width:80%;
-		padding:10px;
-		margin:20px auto;
-		border-radius: 10px;
-		position: relative;
-		white-space: nowrap;
-	}
-	#countdown-timer h3 {
-		color:white;
-		padding-top:10px;
-		font-size: medium;
-	}
-	#countdown-timer > div > div {
-		background:white;
-		height:50px;
-		font-size: large;
-		line-height:30px;
-		color:#2A202F;
-		/*margin:10px 0;*/
-		font-family: 'Oswald', sans-serif;
-	}
-
-	#schedule-container {
-		height: 600px;
-	}
-
-}
-
-@media (min-width: 450px) and (max-width: 650px) {
-	#banner-text h1 {
-		font-size: 100%;
-	}
-	.section-header {
-		font-size: 100%;
-	}
-	.section-header-center {
-		font-size: 100%;
-	}
-	#logo-container img {
-		width: 300px;
-	}
-	#logo-container img {
-		width: 60%;
-	}
-	#mlh-trust-badge img {
-		max-height: 85px;
-	}
-	.learnbuildshare-icon img {
-		width: 35% !important;
-	}
-	.tagline {
-		padding: 15px;
-	}
-	a .button {
-		font-size: 50%;
-	}
-	p {
-		font-size: 60%
-	}
-}
-@media (min-width: 650px) {
-	#banner-text h1 {
-		font-size: 120%;
-	}
-	.section-header {
-		font-size: 120%;
-	}
-	.section-header-center {
-		font-size: 120%;
-	}
-	#logo-container img {
-		width: 350px;
-	}
-	.tagline {
-		padding: 20px;
-	}
-	a .button {
-		font-size: 70%;
-	}
-	p {
-		font-size: 70%
-	}
-}
-
-/*=================================================*/
 
 
 @font-face {
@@ -362,6 +201,7 @@ a:hover {
 	z-index: 500;
 }
 #hackpsu-logo {
+	max-width: 300px;
 	text-align: center;
 	height:auto;
 	z-index: 500;
@@ -433,6 +273,72 @@ a:hover {
 	color: white;
 	font-family: 'Open-Sans-Light';
 }
+
+#hex-container {
+	display: inline-block;
+	position: relative;
+}
+#hex-container img {
+	position: absolute;
+}
+
+.test-sponsor-xl {
+	pointer-events: none;
+}
+.test-sponsor-xl img:nth-child(2) {
+	pointer-events: none;
+	max-width: 150px;
+	height: 125px;
+	right: -75px;
+	top: 45px;
+}
+.test-sponsor-xl img:nth-child(1) {
+	pointer-events: auto;
+	max-width: 200px;
+	right: -100;
+}
+.test-sponsor-xl div {
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.test-sponsor-med {
+	pointer-events: none;
+}
+.test-sponsor-med img:nth-child(2) {
+	pointer-events: none;
+	max-width: 100px;
+	height: 75px;
+	right: -50px;
+	top: 45px;
+}
+.test-sponsor-med img:nth-child(1) {
+	pointer-events: auto;
+	max-width: 150px;
+	right: -75;
+}
+.test-sponsor-med div {
+	margin-right: 85px;
+	margin-left: 85px;
+}
+
+.test-sponsor-sm img:nth-child(2) {
+	pointer-events: none;
+	max-width: 75px;
+	height: 75px;
+	right: -37.5px;
+	top: 25px;
+}
+.test-sponsor-sm img:nth-child(1) {
+	pointer-events: auto;
+	max-width: 112.5px;
+	right: -56.25px;
+}
+.test-sponsor-sm div {
+	margin-right: 50;
+	margin-left: 50;
+}
+
 #sponsors h1 {
 	display: inline-block;
 	vertical-align: middle;
@@ -445,19 +351,19 @@ a:hover {
 	font-size: 30%;
 }
 .sponsor-xl img {
-	max-width: 225px;
+	max-width: 175px;
 	height: 125px;
 	margin-right: 25px;
     margin-left: 25px;	
 }
 .sponsor-lg img {
-	max-width: 200px;
+	max-width: 125px;
 	height: 125px;
 	margin-right: 25px;
     margin-left: 25px;
 } 
 .sponsor-med img {
-	max-width: 175px;
+	max-width: 75px;
 	height: 75px;
 	margin-top: 20px;
 	margin-right: 35px;
@@ -469,6 +375,48 @@ a:hover {
 	height: 50px;
 	margin-right: 45px;
     margin-left: 45px;
+}
+
+.xl-div {
+	pointer-events: none;
+	height: 150px;
+	width: 100%;
+}
+.med-div {
+	pointer-events: none;
+	height: 60px;
+	width: 100%;
+}
+.sm-div {
+	pointer-events: none;
+	height: 35px;
+	width: 100%;
+}
+.seperator-div {
+	pointer-events: none;
+	height: 175px;
+	width: 100%;
+}
+
+.zoom img {
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.zoom:hover img {
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.zoom:hover img:nth-child(1) {
+	top: -50px;
+}
+.zoom:hover img:nth-child(2) {
+	top: -5px;
 }
 
 /*========= PAST PROJECTS ==========*/
