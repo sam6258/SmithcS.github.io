@@ -196,14 +196,9 @@ a:hover {
 	padding:0;
 }
 #logo-container {
+	font-size: 0;
 	width:100%;
 	position: relative;
-	z-index: 500;
-}
-#hackpsu-logo {
-	max-width: 300px;
-	text-align: center;
-	height:auto;
 	z-index: 500;
 }
 #banner {
@@ -268,6 +263,41 @@ a:hover {
 	text-align: right;
 }
 
+/*========= HACKPSU LOGO ==========*/
+#hackpsu-logo {
+	position: absolute;
+	margin-left: -150px;
+	left: 50%;
+	top: 100px;
+	max-width: 300px;
+	z-index: 500;
+}
+
+.logo-outline {
+	padding: 0;
+	margin: 0;
+	width: 30%;
+}
+
+.path-left {
+	stroke: white;
+	stroke-dasharray: 730.56;
+	stroke-dashoffset: 730.56;
+	animation: dash 3.5s linear forwards;
+}
+.path-right {
+	stroke: white;
+	stroke-dasharray: 730.52;
+	stroke-dashoffset: 730.52;
+	animation: dash 3.5s linear forwards;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
 /*========= SPONSORS ==========*/
 #sponsors {
 	color: white;
@@ -279,6 +309,9 @@ a:hover {
 	position: relative;
 }
 #hex-container img {
+	position: absolute;
+}
+#hex-container svg {
 	position: absolute;
 }
 
@@ -379,12 +412,12 @@ a:hover {
 
 .xl-div {
 	pointer-events: none;
-	height: 150px;
+	height: 175px;
 	width: 100%;
 }
 .med-div {
 	pointer-events: none;
-	height: 60px;
+	height: 90px;
 	width: 100%;
 }
 .sm-div {
@@ -394,7 +427,7 @@ a:hover {
 }
 .seperator-div {
 	pointer-events: none;
-	height: 175px;
+	height: 200px;
 	width: 100%;
 }
 
