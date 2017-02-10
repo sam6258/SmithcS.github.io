@@ -502,10 +502,6 @@ a:hover {
 	height: 30px;
 }
 
-.section-title {
-
-}
-
 .section-title-letter {
 	display: inline-block;
 	padding-right: 1%;
@@ -516,7 +512,7 @@ a:hover {
 	position: relative;
 	background-color: white;
 	height: 2px;
-	top: 5vh;
+	top: 14px;
 }
 
 .section-title-word {
@@ -527,7 +523,10 @@ a:hover {
 
 @media screen and (max-width: 768px){
    .small-screen-hide { display: none; }
-   .title-graphic-line {background-color: transparent;}
+   .title-graphic-line {
+   	background-color: transparent;
+   	width: 0px;
+   }
    .section-title{width: 100%;}
 }
 
