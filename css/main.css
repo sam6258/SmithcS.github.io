@@ -187,6 +187,22 @@ a:hover {
 	height:4px;
 }
 
+.center {
+	float: center;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
 /*++++++++++++ CUSTOM HEADER ELEMENTS +++++++++++++*/
 
 /*========= HEADER ==========*/
@@ -343,7 +359,7 @@ a:hover {
 	position: absolute;
 	width: 75%;
 	height: 63%;
-	right: 10%;
+	right: 12%;
 	top: 18%;
 }
 
@@ -482,23 +498,44 @@ a:hover {
 
 /*========================= *** Section Title *** =========================*/
 
-.section-title {
+.section-title-container{
 	height: 30px;
-	width: 100%;
 }
 
-.section-title-outside-space {
-
-}
-
-.section-title-outside-line {
+.section-title {
 
 }
 
-.section-title-inner-text {
-
+.section-title-letter {
+	display: inline-block;
+	padding-right: 1%;
+	padding-left: 1%
 }
 
+.title-graphic-line {
+	position: relative;
+	background-color: white;
+	height: 2px;
+	top: 5vh;
+}
+
+.section-title-word {
+	float: center;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 768px){
+   .small-screen-hide { display: none; }
+   .title-graphic-line {background-color: transparent;}
+   .section-title{width: 100%;}
+}
+
+
+
+@media screen and (min-width: 768px){
+   .responsive_br { display: none; }
+}
 
 /*====================  MISCELLANEOUS ====================*/
 .spacer {
